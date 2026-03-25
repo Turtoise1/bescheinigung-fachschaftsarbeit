@@ -8,10 +8,16 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 
+% Es müssen nur die folgenden Werte angepasst werden
+\def\mitglied{Marlin Zapp} % Name des Mitglieds, dass seine Stunden bescheinigen will
+\def\sprecher{Alexander Braun-Jung} % Name des aktuellen FSR-Sprechers
+\def\von{Oktober 2023} % max(Anfang des Studiums, Eintritt in FSR)
+\def\bis{Dezember 2025} % min(Ende des Studiums, Austritt aus FSR)
+\def\stunden{600} % insgesamt gearbeitete Stunden, Durchschnittswert kann mit Skript stunden.py berechnet werden
 
 \geometry{a4paper, top=25mm, left=25mm, right=25mm, bottom=25mm}
 
-\signature{Alexander Braun-Jung\\Sprecher des Fachschaftsrats Informatik\\Universität Trier}
+\signature{\sprecher\\Sprecher des Fachschaftsrats Informatik\\Universität Trier}
 
 \begin{document}
 
@@ -34,10 +40,9 @@
 \begin{letter}{}
 	\opening{Sehr geehrte Damen und Herren,}
 
-	% angegebener Zeitraum muss im aktuellen Studium, z.B. Master, liegen
-	hiermit bestätige ich, dass \textbf{Marlin Zapp} von \textbf{Oktober 2023 bis Dezember 2025} gewähltes Mitglied im Fachschaftsrat Informatik der Universität Trier war.
+	hiermit bestätige ich, dass \textbf{\mitglied} von \textbf{\von{} bis \bis} gewähltes Mitglied im Fachschaftsrat Informatik der Universität Trier war.
 
-	Während dieser Zeit hat Marlin Zapp \textbf{insgesamt ca. 600 Stunden} ehrenamtlich gearbeitet. Das Engagement umfasste verschiedene Tätigkeiten im Interesse des Fachbereichs Informatik, unter anderem die Organisation und Durchführung von Veranstaltungen für Studierende.
+	Während dieser Zeit hat \mitglied{} \textbf{insgesamt ca. 600 Stunden} ehrenamtlich gearbeitet. Das Engagement umfasste verschiedene Tätigkeiten im Interesse des Fachbereichs Informatik, unter anderem die Organisation und Durchführung von Veranstaltungen für Studierende.
 
 	Diese Bestätigung dient zur Vorlage beim BAföG-Amt für die Verlängerung des För\-de\-rungs\-zeit\-raums.
 
