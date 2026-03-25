@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{paralist}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+\geometry{a4paper, top=25mm, left=25mm, right=25mm, bottom=25mm}
+
+\signature{Alexander Braun-Jung\\Sprecher des Fachschaftsrats Informatik\\Universität Trier}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{} % clear existing header/footer entries
+% We don't need to specify the O coordinate
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyhead[R]{Fachschaftsrat Informatik\\Universität Trier\\Behringstraße 21, 54296 Trier}
+	\fancyhead[L]{\includegraphics[height=50px]{fsi_trier_schwarz-06.png}}
+}
+\pagestyle{plain}
+
+\makeatletter
+\let\ps@empty\ps@plain
+\let\ps@firstpage\ps@plain
+\makeatother
+
+\begin{letter}{}
+	\opening{Sehr geehrte Damen und Herren,}
+
+	% angegebener Zeitraum muss im aktuellen Studium, z.B. Master, liegen
+	hiermit bestätige ich, dass \textbf{Marlin Zapp} von \textbf{Oktober 2023 bis Dezember 2025} gewähltes Mitglied im Fachschaftsrat Informatik der Universität Trier war.
+
+	Während dieser Zeit hat Marlin Zapp \textbf{insgesamt ca. 600 Stunden} ehrenamtlich gearbeitet. Das Engagement umfasste verschiedene Tätigkeiten im Interesse des Fachbereichs Informatik, unter anderem die Organisation und Durchführung von Veranstaltungen für Studierende.
+
+	Diese Bestätigung dient zur Vorlage beim BAföG-Amt für die Verlängerung des För\-de\-rungs\-zeit\-raums.
+
+	Für Rückfragen stehe ich gerne zur Verfügung.
+
+	\closing{Mit freundlichen Grüßen,}
+
+\end{letter}
+\end{document}
